@@ -1,0 +1,1 @@
+<a href="/">OpenApp<small><sup>2</sup></small></a>

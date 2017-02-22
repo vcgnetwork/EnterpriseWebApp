@@ -1,0 +1,1 @@
+<a href="javascript:history.go(-1)"><i class="fa fa-long-arrow-left"></i> Back</a> | <a href="#top"><i class="fa fa-long-arrow-up"></i> Top</a>
