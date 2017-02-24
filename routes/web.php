@@ -34,6 +34,15 @@ Route::get('/accounting/financial-create', 'AccountingController@financialCreate
 Route::get('/accounting/journal-entries', 'AccountingController@journalEntries')->name('journalentries');
 Route::get('/accounting/journal-entry-create', 'AccountingController@journalEntryCreate')->name('journalentrycreate');
 
+/* SETTINGS */
+Route::get('/system/application-settings', 'SystemController@appSettings')->name('settings');
+Route::get('/system/application-setting-create', 'SystemController@appSettingCreate')->name('settingcreate');
+Route::get('/system/documentation', 'SystemController@documentation')->name('settingcreate');
+Route::get('/system/users', 'SystemController@users')->name('settingcreate');
+Route::get('/system/role', 'SystemController@appSettingCreate')->name('settingcreate');
+Route::get('/system/acl', 'SystemController@appSettingCreate')->name('settingcreate');
+Route::get('/system/site-map', 'SystemController@appSettingCreate')->name('settingcreate');
+
 /* TASKS */
 Route::get('/tasks', 'TaskController@index')->name('tasks');
 Route::get('/tasks/create', 'TaskController@create')->name('tasks-create');
