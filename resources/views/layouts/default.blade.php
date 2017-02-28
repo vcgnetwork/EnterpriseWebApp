@@ -28,7 +28,7 @@
 
 <div class="container-fluid">
 
-@include('shared.navigation')
+{{--@include('shared.navigation')--}}
 
 @include('shared.header')
 
