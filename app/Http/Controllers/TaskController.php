@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class TaskController extends Controller
 {
-    public function indexAction()
+    public function index()
     {
         $em = $this->getDoctrine()->getManager();
         $tasks = $em->getRepository('AppBundle:Task')->findAll();
@@ -21,7 +21,7 @@ class TaskController extends Controller
      * @Route("/task/new", name="task_new")
      * @Method({"GET", "POST"})
      */
-    public function newAction(Request $request)
+    public function new(Request $request)
     {
         $task = new Task();
         $form = $this->createForm('AppBundle\Form\TaskType', $task);

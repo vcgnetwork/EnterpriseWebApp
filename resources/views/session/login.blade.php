@@ -1,6 +1,5 @@
-{% extends 'login.html.twig' %}
-
-{% block body %}
+@extends('layouts.login')
+@section('content')
 
     <div class="login-top-space"></div>
 
@@ -10,7 +9,7 @@
         <div class="col-sm-6">
             <h3>
                 <small>Welcome to</small>
-                {% include 'partials/system-name.html.twig' %}
+                @include('shared.system-name')
             </h3>
             <p>
                 <small>To sign in, please use your email address and password, then click on "Login". Follow the links below if you have any trouble.</small>
@@ -62,5 +61,4 @@
             </div><!-- .ibox -->
         </div><!-- .col -->
     </div><!-- .row -->
-
-{% endblock %}
+@endsection

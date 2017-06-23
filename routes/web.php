@@ -1,26 +1,28 @@
 <?php
 
 /* BASIC CORE STATIC PAGES */
-Route::get('/page/about', 'PageController@about')->name('about');
-Route::get('/page/contact', 'PageController@contact')->name('contact');
-Route::get('/page/expansion', 'PageController@expansion')->name('expansion');
-Route::get('/page/json', 'PageController@json')->name('json');
-Route::get('/page/marketing', 'PageController@marketing')->name('marketing');
-Route::get('/page/overview', 'PageController@overview')->name('overview');
-Route::get('/page/search', 'PageController@search')->name('search');
-Route::get('/page/site-map', 'PageController@site-map')->name('sitemap');
-Route::get('/page/support', 'PageController@support')->name('support');
+Route::get('/about', 'PageController@about')->name('about');
+Route::get('/contact', 'PageController@contact')->name('contact');
+Route::get('/expansion', 'PageController@expansion')->name('expansion');
+Route::get('/json', 'PageController@json')->name('json');
+Route::get('/marketing', 'PageController@marketing')->name('marketing');
+Route::get('/overview', 'PageController@overview')->name('overview');
+Route::get('/search', 'PageController@search')->name('search');
+Route::get('/site-map', 'PageController@site-map')->name('sitemap');
+Route::get('/support', 'PageController@support')->name('support');
 Route::get('/', 'PageController@index')->name('home');
 
 /* ===== ===== ===== ===== ===== */
 
 /* AUTH PAGES */
-Route::get('/register', 'AuthController@register')->name('register');
-Route::get('/auth/register', 'AuthController@register')->name('register');
-Route::get('/login', 'AuthController@login')->name('login');
-Route::get('/auth/login', 'AuthController@login')->name('login');
-Route::get('/logout', 'AuthController@logout')->name('logout');
-Route::get('/auth/logout', 'AuthController@logout')->name('logout');
+Route::get('/login', 'SessionController@login')->name('login');
+
+//Route::get('/register', 'AuthController@register')->name('register');
+//Route::get('/auth/register', 'AuthController@register')->name('register');
+//Route::get('/login', 'AuthController@login')->name('login');
+//Route::get('/auth/login', 'AuthController@login')->name('login');
+//Route::get('/logout', 'AuthController@logout')->name('logout');
+//Route::get('/auth/logout', 'AuthController@logout')->name('logout');
 
 /* ACCOUNTING */
 Route::get('/accounting/ap', 'AccountingController@ap')->name('ap');
